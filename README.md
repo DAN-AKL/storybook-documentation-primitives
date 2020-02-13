@@ -2,9 +2,9 @@
 
 >
 
-[![NPM](https://img.shields.io/npm/v/design-system-primitives.svg)](https://www.npmjs.com/package/design-system-primitives)
+[![NPM](https://img.shields.io/npm/v/@dan-nz/documentation-primitives?style=flat-square)](https://www.npmjs.com/package/design-system-primitives)
 
-## Install
+## Installation
 
 ```bash
 npm i @dan-nz/design-system-primitives
