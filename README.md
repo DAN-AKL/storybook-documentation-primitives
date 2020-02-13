@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm i design-system-primitives
+npm i @dan-nz/design-system-primitives
 ```
 
 ## License
