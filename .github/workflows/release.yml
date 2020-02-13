@@ -31,6 +31,9 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
 
+      - name: Build Storybook
+        run: npm run storybook:build
+
       - name: Deploy Storybook
         uses: jakejarvis/s3-sync-action@master
         with:
