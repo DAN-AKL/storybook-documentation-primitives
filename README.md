@@ -30,6 +30,12 @@ import { Swatch, SwatchContainer } from '@dan-nz/documentation-primitives';
 
 ## [Demo]()
 
+### Running demos locally
+
+```bash
+npm run storybook:start
+```
+
 ## Components
 
 ### Color Swatches
