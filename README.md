@@ -28,7 +28,7 @@ import { Swatch, SwatchContainer } from '@dan-nz/documentation-primitives';
 </SwatchContainer>
 ```
 
-## [Demo]()
+## [Demo](http://documentation-primitives-storybook.s3-website-ap-southeast-2.amazonaws.com/)
 
 ### Running demos locally
 
