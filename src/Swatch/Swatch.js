@@ -1,58 +1,57 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import { styled } from '@storybook/theming';
+import { P } from '@storybook/components/html';
+import { withReset } from '@storybook/components/dist/typography/shared';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 const Container = styled.div`
   & + & {
-    margin-top: 1.25rem;
+    margin-top: 32px;
   }
-`;
-
-const ContainerTitle = styled.h3`
-  margin: 0 0 0.5rem;
 `;
 
 const ContainerItems = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -8px;
 `;
 
 const Item = styled.div`
-  position: relative;
-  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 8px;
+  margin: 0 0 16px;
 `;
 
-const Color = styled.div`
-  width: 8rem;
-  height: 8rem;
-  margin: 0 0 0.5rem;
-  border-radius: 4px;
-  border-color: #0000001a;
-  background-color: ${props => props.value};
-`;
+const Color = styled.div(withReset, ({ value }) => ({
+  width: 128,
+  height: 128,
+  marginBottom: 4,
+  borderRadius: 4,
+  border: '1px solid #0000001a',
+  backgroundColor: value,
+}));
 
-const Name = styled.p`
-  font-weight: 700;
-  margin: 0 0 0.25rem;
-`;
+const Name = styled.p(withReset, ({ theme }) => ({
+  fontSize: theme.typography.size.s2,
+  fontWeight: theme.typography.weight.bold,
+  lineHeight: '24px',
+  color: theme.color.defaultText,
+}));
 
-const ButtonReset = styled.button`
-  -webkit-appearance: none;
-  user-select: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 0.875rem;
-`;
+const ButtonReset = styled.button(withReset, ({ theme }) => ({
+  WebkitAppearance: 'none',
+  userSelect: 'none',
+  margin: 0,
+  padding: 0,
+  border: 0,
+  outline: 0,
+  cursor: 'pointer',
+  fontSize: theme.typography.size.s2,
+}));
 
-export const SwatchContainer = ({ title, children }) => {
+export const SwatchContainer = ({ children }) => {
   return (
     <Container>
-      <ContainerTitle>{title}</ContainerTitle>
       <ContainerItems>{children}</ContainerItems>
     </Container>
   );
@@ -74,16 +73,13 @@ export const Swatch = ({ name, value }) => {
 };
 
 SwatchContainer.propTypes = {
-  title: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element,
   ]).isRequired,
 };
 
-SwatchContainer.defaultProps = {
-  title: '',
-};
+SwatchContainer.defaultProps = {};
 
 Swatch.propTypes = {
   name: PropTypes.string.isRequired,
