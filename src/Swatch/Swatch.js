@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@storybook/theming';
-import { P } from '@storybook/components/html';
 import { withReset } from '@storybook/components/dist/typography/shared';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
