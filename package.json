@@ -26,7 +26,7 @@
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "storybook:build": "build-storybook",
+    "storybook:build": "build-storybook --docs",
     "storybook:start": "start-storybook --docs -p 6006",
     "commit": "git-cz"
   },
