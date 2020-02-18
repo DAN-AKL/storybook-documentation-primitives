@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 0.0.0 (2020-02-18)
+
+
+### Features
+
+* **project:** rename project ([f3002f6](https://github.com/DAN-AKL/storybook-documentation-primitives/commit/f3002f665b0b3ae377ec90af85186575873e4148))
+* **swatch:** refactor swatch component to enable storybook styling ([4552a2f](https://github.com/DAN-AKL/storybook-documentation-primitives/commit/4552a2fcb02ae8222c1b18e1b3f31422683ff3f0))
+
+
+### Bug Fixes
+
+* **storybook:** add --docs option to build-storybook task ([e1bf8c4](https://github.com/DAN-AKL/storybook-documentation-primitives/commit/e1bf8c4040d6bb2c35ca1f5bf5449cc720a385ae))
+* **swatch:** remove unused import ([614c7a3](https://github.com/DAN-AKL/storybook-documentation-primitives/commit/614c7a3930d46e909b576d7f44179a4bb599f894))
+
 ### [0.0.4](https://github.com/DAN-AKL/documentation-primitives/compare/v0.0.3...v0.0.4) (2020-02-13)
 
 ### [0.0.3](https://github.com/DAN-AKL/documentation-primitives/compare/v0.0.2...v0.0.3) (2020-02-13)
