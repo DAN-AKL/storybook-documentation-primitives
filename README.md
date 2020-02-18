@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-npm i @dan-nz/documentation-primitives
+npm i @dan-nz/documentation-primitives prop-types react react-dom
 ```
 
 ## Usage in Storybook documentation-only page (MDX)

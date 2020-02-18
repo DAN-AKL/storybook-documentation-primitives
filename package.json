@@ -47,9 +47,7 @@
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@storybook/addon-docs": "^6.0.0-alpha.13",
     "@storybook/addons": "^6.0.0-alpha.13",
-    "@storybook/components": "^6.0.0-alpha.13",
     "@storybook/react": "^6.0.0-alpha.13",
-    "@storybook/theming": "^6.0.0-alpha.13",
     "babel-loader": "^8.0.6",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.1.0",
@@ -64,8 +62,9 @@
     "webpack": "^4.41.5"
   },
   "dependencies": {
-    "react-copy-to-clipboard": "^5.0.2",
-    "styled-components": "^5.0.1"
+    "@storybook/components": "^6.0.0-alpha.13",
+    "@storybook/theming": "^6.0.0-alpha.13",
+    "react-copy-to-clipboard": "^5.0.2"
   },
   "husky": {
     "hooks": {
