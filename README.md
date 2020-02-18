@@ -1,19 +1,19 @@
 # documentation-primitives
 
-[![NPM](https://img.shields.io/npm/v/@dan-nz/documentation-primitives?style=flat-square)](https://www.npmjs.com/package/@dan-nz/documentation-primitives)
+[![NPM](https://img.shields.io/npm/v/@dan-nz/storybook-documentation-primitives?style=flat-square)](https://www.npmjs.com/package/@dan-nz/storybook-documentation-primitives)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 
 ## Installation
 
 ```bash
-npm i @dan-nz/documentation-primitives prop-types react react-dom
+npm i @dan-nz/storybook-documentation-primitives prop-types react react-dom
 ```
 
 ## Usage in Storybook documentation-only page (MDX)
 
 ```md
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
-import { Swatch, SwatchContainer } from '@dan-nz/documentation-primitives';
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Swatch, SwatchContainer } from '@dan-nz/storybook-documentation-primitives';
 
 <Meta title="Color" />
 

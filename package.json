@@ -1,20 +1,17 @@
 {
-  "name": "@dan-nz/documentation-primitives",
-  "version": "0.1.4",
-  "description": "A collection of React primitives to use for documenting components and tokens in design systems",
+  "name": "@dan-nz/storybook-documentation-primitives",
+  "version": "0.0.0",
+  "description": "A collection of Storybook primitives to use for documenting components and tokens in design systems",
   "keywords": [
     "design systems",
     "documentation",
     "component",
     "storybook",
-    "react",
-    "swatch",
-    "jsx",
     "mdx"
   ],
   "author": "Digital Arts Network New Zealand",
   "license": "MIT",
-  "repository": "git@github.com:DAN-AKL/documentation-primitives.git",
+  "repository": "git@github.com:DAN-AKL/storybook-documentation-primitives.git",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "engines": {
@@ -63,6 +60,7 @@
   },
   "dependencies": {
     "@storybook/components": "^5.3.13",
+    "@storybook/theming": "^5.3.13",
     "react-copy-to-clipboard": "^5.0.2"
   },
   "husky": {
