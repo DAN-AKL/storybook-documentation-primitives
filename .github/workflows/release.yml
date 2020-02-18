@@ -29,7 +29,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx@16.0.4 semantic-release
+        run: npx semantic-release@16.0.4
 
       - name: Build Storybook
         run: npm run storybook:build
