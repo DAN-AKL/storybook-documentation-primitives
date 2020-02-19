@@ -3,11 +3,6 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import external from 'rollup-plugin-peer-deps-external';
 
-import * as react from 'react';
-import * as reactDom from 'react-dom';
-import * as reactIs from 'react-is';
-import * as propTypes from 'prop-types';
-
 import pkg from './package.json';
 
 export default {
@@ -25,7 +20,10 @@ export default {
     },
   ],
   plugins: [
-    external(),
+    external({
+      includeDependencies: true,
+    }),
+    resolve(),
     babel({
       babelrc: false,
       exclude: ['node_modules/**'],
@@ -39,15 +37,8 @@ export default {
         '@babel/preset-react',
       ],
       plugins: ['@babel/plugin-proposal-export-default-from'],
+      runtimeHelpers: true,
     }),
-    resolve(),
-    commonjs({
-      namedExports: {
-        react: Object.keys(react),
-        'react-dom': Object.keys(reactDom),
-        'react-is': Object.keys(reactIs),
-        'prop-types': Object.keys(propTypes),
-      },
-    }),
+    commonjs(),
   ],
 };

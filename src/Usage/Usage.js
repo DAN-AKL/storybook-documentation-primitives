@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@storybook/theming';
-import { Div, P, H4 } from '@storybook/components/html';
+import { components } from '@storybook/components/html';
+
+const Div = components.div;
+const P = components.p;
+const H4 = components.h4;
 
 const Container = styled.div`
   display: flex;
