@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/DAN-AKL/storybook-documentation-primitives/compare/v0.2.1...v0.2.2) (2020-02-20)
+
+
+### Features
+
+* **panel:** add Panel components ([96eb58e](https://github.com/DAN-AKL/storybook-documentation-primitives/commit/96eb58e1efa6b6515681aceca42a555eaafbcf42))
+
 ### [0.2.1](https://github.com/DAN-AKL/storybook-documentation-primitives/compare/v0.2.0...v0.2.1) (2020-02-19)
 
 ## [0.2.0](https://github.com/DAN-AKL/storybook-documentation-primitives/compare/v0.1.0...v0.2.0) (2020-02-19)
