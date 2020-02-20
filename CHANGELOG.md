@@ -1,3 +1,15 @@
+# v0.2.3 (Thu Feb 20 2020)
+
+#### ⚠️  Pushed to master
+
+- docs: re-write stories in MDX  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
