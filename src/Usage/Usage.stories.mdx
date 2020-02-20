@@ -1,0 +1,68 @@
+import { Fragment } from 'react';
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Usage, Correct, Incorrect } from './Usage';
+
+<Meta title="Primitives/Usage Blocks" />
+
+# Usage Blocks
+
+<Props components={{ Correct, Incorrect }} />
+
+Description
+
+<Preview>
+  <Story name="default">
+    <Usage>
+      <Correct>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sunt
+        quis, modi omnis fuga repellat perferendis distinctio facere?
+      </Correct>
+      <Incorrect>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sunt
+        quis, modi omnis fuga repellat perferendis distinctio facere? Possimus
+        illum aut maxime minima atque iste, aliquid quod unde pariatur
+        exercitationem.
+      </Incorrect>
+    </Usage>
+  </Story>
+</Preview>
+
+## Custom titles
+
+By default, the titles are **"Do"** and **"Don't"** for the `<Correct />` and `<Incorrect />` blocks respectively which can be customised via the `title` prop.
+
+<Preview>
+  <Story name="customTitles">
+    <Usage>
+      <Correct title="Right">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sunt
+        quis, modi omnis fuga repellat perferendis distinctio facere?
+      </Correct>
+      <Incorrect title="Wrong">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sunt
+        quis, modi omnis fuga repellat perferendis distinctio facere? Possimus
+        illum aut maxime minima atque iste, aliquid quod unde pariatur
+        exercitationem.
+      </Incorrect>
+    </Usage>
+  </Story>
+</Preview>
+
+Lorem
+
+<Preview>
+  <Story name="customTitlesEmoji">
+    <Usage>
+      <Correct title="🙂">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sunt
+        quis, modi omnis fuga repellat perferendis distinctio facere?
+      </Correct>
+      <Incorrect title="🙁">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sunt
+        quis, modi omnis fuga repellat perferendis distinctio facere? Possimus
+        illum aut maxime minima atque iste, aliquid quod unde pariatur
+        exercitationem.
+      </Incorrect>
+    </Usage>
+  </Story>
+</Preview>

@@ -65,6 +65,14 @@ export const Usage = ({ children }) => {
   return <Container>{children}</Container>;
 };
 
+const foo = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.element,
+  ]).isRequired,
+  title: PropTypes.string,
+};
+
 Usage.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element),
@@ -73,11 +81,7 @@ Usage.propTypes = {
 };
 
 Correct.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.element,
-  ]).isRequired,
-  title: PropTypes.string,
+  ...foo,
 };
 
 Incorrect.propTypes = {
