@@ -2,6 +2,19 @@
 
 #### ⚠️  Pushed to master
 
+- build(auto): add auto for release manangement  ([@gmlnchv](https://github.com/gmlnchv))
+- docs: re-write stories in MDX  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
+# v0.2.3 (Thu Feb 20 2020)
+
+#### ⚠️  Pushed to master
+
 - docs: re-write stories in MDX  ([@gmlnchv](https://github.com/gmlnchv))
 
 #### Authors: 1
