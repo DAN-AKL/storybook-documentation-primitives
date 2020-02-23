@@ -2,9 +2,9 @@ import { Fragment } from 'react';
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
 import { Usage, Correct, Incorrect } from './Usage';
 
-<Meta title="Primitives/Usage Blocks" />
+<Meta title="Primitives/Usage blocks" />
 
-# Usage Blocks
+# Usage blocks
 
 <Props components={{ Correct, Incorrect }} />
 
@@ -13,15 +13,10 @@ Description
 <Preview>
   <Story name="default">
     <Usage>
-      <Correct>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sunt
-        quis, modi omnis fuga repellat perferendis distinctio facere?
-      </Correct>
+      <Correct>Use "Red" for validation error text.</Correct>
       <Incorrect>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum sunt
-        quis, modi omnis fuga repellat perferendis distinctio facere? Possimus
-        illum aut maxime minima atque iste, aliquid quod unde pariatur
-        exercitationem.
+        Don’t combine color values in ways that do not meet minimum
+        accessibility contrast requirements.
       </Incorrect>
     </Usage>
   </Story>

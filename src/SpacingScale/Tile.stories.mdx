@@ -1,0 +1,24 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Tile } from './SpacingScale';
+
+<Meta title="Primitives/Spacing tile" />
+
+# Spacing tile
+
+<Props of={Tile} />
+
+Description
+
+<Preview>
+  <Story name="default">
+    <Tile value="24" />
+  </Story>
+</Preview>
+
+Custom
+
+<Preview>
+  <Story name="custom">
+    <Tile value={6} unit="rem" color="#1565c0" square />
+  </Story>
+</Preview>

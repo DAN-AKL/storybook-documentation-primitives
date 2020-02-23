@@ -1,0 +1,111 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { SpacingScale, Row } from './SpacingScale';
+import Var from '../Var/Var';
+
+<Meta title="Primitives/Spacing scale" />
+
+# Spacing scale
+
+<Props components={{SpacingScale, Row}} />
+
+Description
+
+<Preview>
+  <Story name="default">
+    <SpacingScale>
+      <Row value={4}>xxsmall</Row>
+      <Row value={8}>xsmall</Row>
+      <Row value={12}>small</Row>
+      <Row value={20}>medium</Row>
+      <Row value={32}>large</Row>
+      <Row value={52}>xlarge</Row>
+      <Row value={64}>xxlarge</Row>
+    </SpacingScale>
+  </Story>
+</Preview>
+
+## Names
+
+`<Row>` components accept children so that the table can be used for tokens.
+
+Use the `<Var>` component to format the tokens as code and give them the "copy to clipboard" functionality.
+
+<Preview>
+  <Story name="tokens">
+    <SpacingScale>
+      <Row value={4}>
+        <Var>$spacing-01</Var>
+      </Row>
+      <Row value={8}>
+        <Var>$spacing-02</Var>
+      </Row>
+      <Row value={12}>
+        <Var>$spacing-03</Var>
+      </Row>
+      <Row value={20}>
+        <Var>$spacing-04</Var>
+      </Row>
+      <Row value={32}>
+        <Var>$spacing-05</Var>
+      </Row>
+      <Row value={52}>
+        <Var>$spacing-06</Var>
+      </Row>
+      <Row value={64}>
+        <Var>$spacing-07</Var>
+      </Row>
+    </SpacingScale>
+  </Story>
+</Preview>
+
+## Values
+
+Default CSS unit is "px" but you can also use "rem".
+
+<Preview>
+  <Story name="rems">
+    <SpacingScale unit="rem">
+      <Row value={1}>xxsmall</Row>
+      <Row value={1.5}>xsmall</Row>
+      <Row value={2}>small</Row>
+      <Row value={3}>medium</Row>
+      <Row value={4}>large</Row>
+      <Row value={6}>xlarge</Row>
+      <Row value={10}>xxlarge</Row>
+    </SpacingScale>
+  </Story>
+</Preview>
+
+## Custom column names
+
+<Preview>
+  <Story name="columnNames">
+    <SpacingScale columns={['Step', 'Value', '']}>
+      <Row value={4}>1</Row>
+      <Row value={8}>2</Row>
+      <Row value={12}>3</Row>
+      <Row value={20}>4</Row>
+      <Row value={32}>5</Row>
+      <Row value={52}>6</Row>
+      <Row value={64}>7</Row>
+    </SpacingScale>
+  </Story>
+</Preview>
+
+## Tile
+
+Change appearance of the example tile. These options are passed to the `<Tile>` component.
+
+<Preview>
+  <Story name="tileProps">
+    <SpacingScale tileProps={{square: true, color: "#78909c"}}>
+      <Row value={4}>xxsmall</Row>
+      <Row value={8}>xsmall</Row>
+      <Row value={12}>small</Row>
+      <Row value={20}>medium</Row>
+      <Row value={32}>large</Row>
+      <Row value={52}>xlarge</Row>
+      <Row value={64}>xxlarge</Row>
+    </SpacingScale>
+  </Story>
+</Preview>

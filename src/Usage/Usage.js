@@ -65,31 +65,21 @@ export const Usage = ({ children }) => {
   return <Container>{children}</Container>;
 };
 
-const foo = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.element,
-  ]).isRequired,
+const usagePropTypes = {
+  children: PropTypes.string.isRequired,
   title: PropTypes.string,
 };
 
 Usage.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.element,
-  ]).isRequired,
+  ...usagePropTypes,
 };
 
 Correct.propTypes = {
-  ...foo,
+  ...usagePropTypes,
 };
 
 Incorrect.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.element,
-  ]).isRequired,
-  title: PropTypes.string,
+  ...usagePropTypes,
 };
 
 Correct.defaultProps = {
