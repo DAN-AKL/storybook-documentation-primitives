@@ -4,4 +4,7 @@ addParameters({
   options: {
     showRoots: true,
   },
+  fooParam: {
+    baz: 'quax',
+  },
 });

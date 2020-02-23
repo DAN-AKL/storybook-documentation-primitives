@@ -1,0 +1,20 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import EditLink from './EditLink';
+
+<Meta title="Primitives/Edit on GitHub" />
+
+# Edit on GitHub
+
+Quick access to the current page source on GitHub. Opens in edit mode.
+
+<Props of={EditLink} />
+
+## Relative path
+
+For the component to work you must provide a link to the page relative to root of your repository.
+
+<Preview>
+  <Story name="default">
+    <EditLink relativePath="src/EditLink/EditLink.stories.mdx" />
+  </Story>
+</Preview>

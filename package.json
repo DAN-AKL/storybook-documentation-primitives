@@ -45,6 +45,7 @@
     "@rollup/plugin-node-resolve": "^7.1.1",
     "@storybook/addon-docs": "^5.3.13",
     "@storybook/addons": "^5.3.13",
+    "@storybook/api": "^5.3.13",
     "@storybook/react": "^5.3.13",
     "auto": "^9.10.7",
     "babel-loader": "^8.0.6",
@@ -64,6 +65,7 @@
   },
   "dependencies": {
     "@storybook/components": "^5.3.13",
+    "@storybook/design-system": "^3.0.0",
     "@storybook/theming": "^5.3.13",
     "react-copy-to-clipboard": "^5.0.2"
   },
