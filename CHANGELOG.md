@@ -1,3 +1,15 @@
+# v0.3.0 (Mon Feb 24 2020)
+
+#### 🚀  Enhancement
+
+- feat(spacing): add spacing scale and related components  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.2.3 (Thu Feb 20 2020)
 
 #### ⚠️  Pushed to master
