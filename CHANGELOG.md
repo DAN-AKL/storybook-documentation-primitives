@@ -1,3 +1,15 @@
+# v0.3.8 (Mon Feb 24 2020)
+
+#### ⚠️  Pushed to master
+
+- ci(github): update download dir for storybook asset  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.3.7 (Mon Feb 24 2020)
 
 #### ⚠️  Pushed to master
