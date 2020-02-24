@@ -29,14 +29,6 @@ jobs:
         with:
           node-version: 12.x
 
-      - name: Cache node modules
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            npm-
-
       - name: Create Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -44,16 +36,21 @@ jobs:
         run: |
           npm ci
           npm run build
+          npm run storybook:build
           npx auto shipit
 
-      - name: Build Storybook
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          npm ci
-          npm run build
-          npx auto shipit
+      - uses: actions/upload-artifact@v1
+        with:
+          name: storybook
+          path: storybook-static
+
+  deploy:
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v1
+        with:
+          name: storybook
 
       - name: Deploy Storybook to S3
         if: success()
