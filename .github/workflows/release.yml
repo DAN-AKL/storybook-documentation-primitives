@@ -16,6 +16,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          git config --global user.name 'gitdeployuserDAN'
+          git config --global user.email 'gitdeployuserDAN@users.noreply.github.com'
           git checkout ${GITHUB_REF:11} --
           git remote rm origin
           git remote add origin "https://x-access-token:$GH_TOKEN@github.com/DAN-AKL/storybook-documentation-primitives.git"
