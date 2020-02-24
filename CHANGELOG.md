@@ -1,3 +1,19 @@
+# v0.3.1 (Mon Feb 24 2020)
+
+#### ⚠️  Pushed to master
+
+- ci(github): use new GH_TOKEN with write access  ([@gmlnchv](https://github.com/gmlnchv))
+- ci(github): add repo prep steps to release workflow  ([@gmlnchv](https://github.com/gmlnchv))
+- ci(github): use GITHUB_TOKEN in release workflow  ([@gmlnchv](https://github.com/gmlnchv))
+- docs(readme): update readme file  ([@gmlnchv](https://github.com/gmlnchv))
+- ci(github): add auto release workflow  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.3.0 (Mon Feb 24 2020)
 
 #### 🚀  Enhancement
