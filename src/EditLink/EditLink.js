@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@storybook/theming';
 import { Icon } from '@storybook/design-system';
+import { DocsContext } from '@storybook/addon-docs/dist/blocks/DocsContext';
 import { components } from '@storybook/components/html';
-import { DocsContext } from '@storybook/addon-docs/blocks';
 
 const P = components.p;
 
