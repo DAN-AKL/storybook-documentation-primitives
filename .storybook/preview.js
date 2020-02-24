@@ -4,7 +4,8 @@ addParameters({
   options: {
     showRoots: true,
   },
-  fooParam: {
-    baz: 'quax',
+  repository: {
+    baseUrl: 'https://github.com/DAN-AKL/storybook-documentation-primitives',
+    branch: 'master',
   },
 });

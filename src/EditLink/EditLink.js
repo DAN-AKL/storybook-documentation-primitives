@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@storybook/theming';
-import { useParameter } from '@storybook/api';
 import { Icon } from '@storybook/design-system';
 import { components } from '@storybook/components/html';
+import { DocsContext } from '@storybook/addon-docs/blocks';
 
 const P = components.p;
 
@@ -17,26 +17,43 @@ const Text = styled.span`
   margin-left: 0.4em;
 `;
 
-const EditLink = ({ relativePath, icon }) => {
-  const results = useParameter('baz', {});
-  console.log(results);
-  return relativePath ? (
+const EditLink = ({ path, text, icon }) => {
+  const {
+    parameters: { repository },
+  } = useContext(DocsContext);
+
+  if (!repository) {
+    return (
+      <P>Can&rsquo;t render EditLink: `repository` parameter is missing.</P>
+    );
+  }
+
+  if (!path) {
+    return <P>Can&rsquo;t render EditLink: `path` prop is missing.</P>;
+  }
+
+  const { baseUrl, branch = 'master' } = repository;
+  const href = `${baseUrl}/edit/${branch}/${path}`;
+
+  return (
     <P>
-      <Link href={relativePath} rel="noopener noreferrer" target="_blank">
+      <Link href={href} rel="noopener noreferrer" target="_blank">
         {icon && <Icon icon="github" aria-hidden />}
-        <Text>Edit this page on GitHub</Text>
+        <Text>{text}</Text>
       </Link>
     </P>
-  ) : null;
+  );
 };
 
 EditLink.propTypes = {
   icon: PropTypes.bool,
-  relativePath: PropTypes.string.isRequired,
+  text: PropTypes.string,
+  path: PropTypes.string.isRequired,
 };
 
 EditLink.defaultProps = {
   icon: true,
+  text: 'Edit this page on GitHub',
 };
 
 export default EditLink;
