@@ -1,0 +1,66 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Prepare repository
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config --global user.name 'gitdeployuserDAN'
+          git config --global user.email 'gitdeployuserDAN@users.noreply.github.com'
+          git checkout ${GITHUB_REF:11} --
+          git remote rm origin
+          git remote add origin "https://x-access-token:$GH_TOKEN@github.com/DAN-AKL/storybook-documentation-primitives.git"
+          git fetch origin --tags
+          git branch --set-upstream-to origin/${GITHUB_REF:11} ${GITHUB_REF:11}
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Create Release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm ci
+          npm run build
+          npm run storybook:build
+          npx auto shipit
+
+      - uses: actions/upload-artifact@v1
+        with:
+          name: storybook
+          path: storybook-static
+
+  deploy:
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v1
+        with:
+          name: storybook
+          path: storybook-static
+
+      - name: Deploy Storybook to S3
+        if: success()
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'ap-southeast-2'
+          SOURCE_DIR: 'storybook-static'
