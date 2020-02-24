@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { styled } from '@storybook/theming';
 import { Icon } from '@storybook/design-system';
 import { components } from '@storybook/components/html';
-import { DocsContext } from '@storybook/addon-docs/blocks';
+import { DocsContext } from '@storybook/addon-docs/dist/blocks/DocsContext';
 
 const P = components.p;
 
