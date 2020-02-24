@@ -1,3 +1,22 @@
+# v0.3.6 (Mon Feb 24 2020)
+
+
+
+---
+
+# v0.3.5 (Mon Feb 24 2020)
+
+#### ⚠️  Pushed to master
+
+- Merge branch 'master' of github.com:DAN-AKL/documentation-primitives  ([@gmlnchv](https://github.com/gmlnchv))
+- ci(github): deploy demo storybook to s3  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.3.4 (Mon Feb 24 2020)
 
 #### ⚠️  Pushed to master
