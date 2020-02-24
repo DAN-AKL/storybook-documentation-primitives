@@ -51,6 +51,7 @@ jobs:
       - uses: actions/download-artifact@v1
         with:
           name: storybook
+          path: storybook-static
 
       - name: Deploy Storybook to S3
         if: success()
