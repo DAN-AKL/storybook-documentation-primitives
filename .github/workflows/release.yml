@@ -12,6 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      - name: Prepare repository
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git checkout ${GITHUB_REF:11} --
+          git remote rm origin
+          git remote add origin https://$gmlnchv:GITHUB_TOKEN@github.com/DAN-AKL/storybook-documentation-primitives
+          git fetch origin --tags
+          git branch --set-upstream-to origin/${GITHUB_REF:11} ${GITHUB_REF:11}
+
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
