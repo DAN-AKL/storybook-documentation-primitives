@@ -91,6 +91,10 @@ Row.defaultProps = {
 };
 
 SpacingScale.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.elementType),
+    PropTypes.elementType,
+  ]).isRequired,
   columns: PropTypes.arrayOf(PropTypes.string),
   tileProps: PropTypes.shape(tilePropsPropTypes),
   unit: PropTypes.oneOf(['px', 'rem']),
