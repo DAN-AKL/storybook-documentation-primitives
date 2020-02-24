@@ -1,3 +1,17 @@
+# v0.3.4 (Mon Feb 24 2020)
+
+#### ⚠️  Pushed to master
+
+- Merge branch 'master' of github.com:DAN-AKL/documentation-primitives  ([@gmlnchv](https://github.com/gmlnchv))
+- docs(readme): update readme badges  ([@gmlnchv](https://github.com/gmlnchv))
+- ci(github): add git user to release workflow  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.3.1 (Mon Feb 24 2020)
 
 #### ⚠️  Pushed to master
