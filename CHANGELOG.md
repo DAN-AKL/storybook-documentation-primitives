@@ -1,3 +1,28 @@
+# v0.4.0 (Wed Feb 26 2020)
+
+#### 🚀  Enhancement
+
+- feat(var): change text to "copied!" on copy [#21](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/21) ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
+# v0.3.12 (Wed Feb 26 2020)
+
+#### 🐛  Bug Fix
+
+-  [#20](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/20) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.3.11 (Wed Feb 26 2020)
 
 #### ⚠️  Pushed to master
