@@ -1,3 +1,24 @@
+# v0.3.10 (Wed Feb 26 2020)
+
+#### 🐛  Bug Fix
+
+- fix: add missing export for Swatches  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### ⚠️  Pushed to master
+
+- refactor(spacingscale): add missing children prop type  ([@gmlnchv](https://github.com/gmlnchv))
+- refactor(swatch): rename container component  ([@gmlnchv](https://github.com/gmlnchv))
+- refactor(usage): update prop types  ([@gmlnchv](https://github.com/gmlnchv))
+- refactor(panels): use composition for correct/incorrect options  ([@gmlnchv](https://github.com/gmlnchv))
+- Merge branch 'master' of github.com:DAN-AKL/documentation-primitives  ([@gmlnchv](https://github.com/gmlnchv))
+- docs: move mdx files to docs folder  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.3.9 (Mon Feb 24 2020)
 
 #### ⚠️  Pushed to master
