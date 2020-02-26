@@ -1,3 +1,16 @@
+# v0.3.11 (Wed Feb 26 2020)
+
+#### ⚠️  Pushed to master
+
+- Merge branch 'master' of github.com:DAN-AKL/documentation-primitives  ([@gmlnchv](https://github.com/gmlnchv))
+- ci(github): add ci workflow  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.3.10 (Wed Feb 26 2020)
 
 #### 🐛  Bug Fix
