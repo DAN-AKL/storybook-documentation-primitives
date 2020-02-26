@@ -66,7 +66,10 @@ export const Usage = ({ children }) => {
 };
 
 const usagePropTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   title: PropTypes.string,
 };
 
@@ -76,16 +79,26 @@ Usage.propTypes = {
 
 Correct.propTypes = {
   ...usagePropTypes,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string,
+  ]).isRequired,
 };
 
 Incorrect.propTypes = {
   ...usagePropTypes,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 
 Correct.defaultProps = {
+  // eslint-disable-next-line react/default-props-match-prop-types
   title: 'Do',
 };
 
 Incorrect.defaultProps = {
+  // eslint-disable-next-line react/default-props-match-prop-types
   title: "Don't",
 };
