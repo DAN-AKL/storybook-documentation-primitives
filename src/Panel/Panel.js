@@ -20,25 +20,52 @@ const StyledPanel = styled(Panel)`
   border-left-width: 5px;
 `;
 
-export const Info = styled(StyledPanel)`
+const InfoPanel = styled(StyledPanel)`
   background-color: #e8f4fd;
   border-color: #2196f3;
 `;
 
-export const Warning = styled(StyledPanel)`
+const WarningPanel = styled(StyledPanel)`
   background-color: #fffae6;
   border-color: #fbc02d;
 `;
 
-Panel.propTypes = {
-  className: PropTypes.string.isRequired,
+export const Info = props => <InfoPanel {...props} />;
+export const Warning = props => <WarningPanel {...props} />;
+
+const panelPropTypes = {
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
   ]).isRequired,
+  className: PropTypes.string,
   prefix: PropTypes.string,
 };
 
-Panel.defaultProps = {
+const panelDefaultProps = {
   prefix: 'Note',
+};
+
+Panel.propTypes = {
+  ...panelPropTypes,
+};
+
+Info.propTypes = {
+  ...panelPropTypes,
+};
+
+Warning.propTypes = {
+  ...panelPropTypes,
+};
+
+Panel.defaultProps = {
+  ...panelDefaultProps,
+};
+
+Info.defaultProps = {
+  ...panelDefaultProps,
+};
+
+Warning.defaultProps = {
+  ...panelDefaultProps,
 };
