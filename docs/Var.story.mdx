@@ -1,0 +1,49 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import Var from '../src/Var/Var';
+
+<Meta title="Primitives/Variable" />
+
+# Variable
+
+A low-level primitive that wraps a string in a `code` tag and adds the "copy to clipboard" functionaly.
+
+---
+
+<Preview>
+  <Story name="var">
+    <Var>$spacing-01</Var>
+  </Story>
+</Preview>
+
+### Disable copy to clipboard
+
+<Preview>
+  <Story name="noCopy">
+    <Var noCopy>$red-500</Var>
+  </Story>
+</Preview>
+
+### Different types of variables
+
+The component simply wraps the passed in string in a `<code>`. Use can use `Var` to display tokens as well as (S)CSS, JavaScript variables, etc.
+
+<Preview>
+  <Story name="js">
+    <Var>zIndexDefault</Var>
+  </Story>
+  <Story name="css">
+    <Var>--component-button-size-large</Var>
+  </Story>
+  <Story name="scss">
+    <Var>$mds-animation-timing-quarter-x</Var>
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Var} />
+
+## Examples of similar components
+
+- [Morning Star](https://designsystem.morningstar.com/visual-language/constants.html)
+- [Orbit](https://orbit.kiwi/)

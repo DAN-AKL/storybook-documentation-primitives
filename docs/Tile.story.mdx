@@ -1,0 +1,26 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import { Tile } from '../src/SpacingScale/SpacingScale';
+
+<Meta title="Primitives/Spacing tile" />
+
+# Spacing tile
+
+A low-level primitive that helps illustrate sizing and spacing concepts. Accepts values in `px` or `rem` units.
+
+---
+
+<Preview>
+  <Story name="default">
+    <Tile />
+  </Story>
+  <Story name="px">
+    <Tile value={96} color="#1565c0" />
+  </Story>
+  <Story name="rem">
+    <Tile value={6} unit="rem" color="#78909c" square />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={Tile} />

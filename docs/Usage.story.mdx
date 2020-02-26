@@ -1,14 +1,14 @@
 import { Fragment } from 'react';
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
-import { Usage, Correct, Incorrect } from './Usage';
+import { Usage, Correct, Incorrect } from '../src/Usage/Usage';
 
 <Meta title="Primitives/Usage blocks" />
 
-# Usage blocks
+# Usage
 
-<Props components={{ Correct, Incorrect }} />
+Usage blocks display general guidence and best practice advice to design system users.
 
-Description
+---
 
 <Preview>
   <Story name="default">
@@ -22,9 +22,9 @@ Description
   </Story>
 </Preview>
 
-## Custom titles
+### Titles
 
-By default, the titles are **"Do"** and **"Don't"** for the `<Correct />` and `<Incorrect />` blocks respectively which can be customised via the `title` prop.
+By default, the titles are **"Do"** and **"Don't"** for the `Correct` and `Incorrect` blocks respectively which can be customised via the `title` prop.
 
 <Preview>
   <Story name="customTitles">
@@ -43,7 +43,7 @@ By default, the titles are **"Do"** and **"Don't"** for the `<Correct />` and `<
   </Story>
 </Preview>
 
-Lorem
+---
 
 <Preview>
   <Story name="customTitlesEmoji">
@@ -61,3 +61,12 @@ Lorem
     </Usage>
   </Story>
 </Preview>
+
+## Props
+
+<Props components={{ Correct, Incorrect }} />
+
+## Examples of similar components
+
+- [Polaris](https://polaris.shopify.com/design/colors#color-combinations)
+- [Spectrum](https://spectrum.adobe.com/page/action-button/#Usage-guidelines/)

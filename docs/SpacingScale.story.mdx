@@ -1,14 +1,15 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
-import { SpacingScale, Row } from './SpacingScale';
-import Var from '../Var/Var';
+import { SpacingScale, Row } from '../src/SpacingScale/SpacingScale';
+import { Info } from '../src/Panel/Panel';
+import Var from '../src/Var/Var';
 
 <Meta title="Primitives/Spacing scale" />
 
 # Spacing scale
 
-<Props components={{SpacingScale, Row}} />
+A simple table to illustrate spacing scale options.
 
-Description
+---
 
 <Preview>
   <Story name="default">
@@ -24,11 +25,13 @@ Description
   </Story>
 </Preview>
 
-## Names
+### "Name" column
 
-`<Row>` components accept children so that the table can be used for tokens.
+The first column simply lists the data passed into the `Row` sub-components.
 
-Use the `<Var>` component to format the tokens as code and give them the "copy to clipboard" functionality.
+<Info>
+  To format text as variables wrap it in a <code>Var</code> component. It uses the <code>code</code> tag internally and also adds the "copy to clipboard" functionality.
+</Info>
 
 <Preview>
   <Story name="tokens">
@@ -58,9 +61,9 @@ Use the `<Var>` component to format the tokens as code and give them the "copy t
   </Story>
 </Preview>
 
-## Values
+### Values
 
-Default CSS unit is "px" but you can also use "rem".
+To make spacing values available for calculations these are passed in as numbers. The CSS unit options are <code>px</code> (default) and <code>rem</code>.
 
 <Preview>
   <Story name="rems">
@@ -76,7 +79,7 @@ Default CSS unit is "px" but you can also use "rem".
   </Story>
 </Preview>
 
-## Custom column names
+### Custom column names
 
 <Preview>
   <Story name="columnNames">
@@ -92,9 +95,9 @@ Default CSS unit is "px" but you can also use "rem".
   </Story>
 </Preview>
 
-## Tile
+### Tile
 
-Change appearance of the example tile. These options are passed to the `<Tile>` component.
+Change appearance of the example tile. These options are passed to the `Tile` component.
 
 <Preview>
   <Story name="tileProps">
@@ -109,3 +112,14 @@ Change appearance of the example tile. These options are passed to the `<Tile>` 
     </SpacingScale>
   </Story>
 </Preview>
+
+## Props
+
+<Props components={{SpacingScale, Row}} />
+
+## Examples of similar components
+
+- [Braid](https://seek-oss.github.io/braid-design-system/foundations/layout#Spacing)
+- [Carbon](https://www.carbondesignsystem.com/guidelines/spacing)
+- [Thumbprint](https://thumbprint.design/guide/product/spacers/)
+- [US Web Design System](https://designsystem.digital.gov/design-tokens/spacing-units/)

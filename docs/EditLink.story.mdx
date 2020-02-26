@@ -1,0 +1,65 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+import EditLink from '../src/EditLink/EditLink';
+
+<Meta title="Primitives/Edit on GitHub" />
+
+# Edit on GitHub
+
+Opens specified files in the GitHub file editor.
+
+---
+
+<Preview>
+  <Story name="default">
+    <EditLink path="src/EditLink/EditLink.stories.mdx" />
+  </Story>
+</Preview>
+
+### Repository
+
+The component expects the repository details added to the [Storybook configuration](https://storybook.js.org/docs/configurations/options-parameter/). The branch is set to `master` by default. Use this config to overwrite that if you link to files in other branches.
+
+```js
+// .storybook/preview.js
+import { addParameters } from '@storybook/react';
+
+addParameters({
+  // other options
+  repository: {
+    baseUrl: 'https://github.com/<owner>/<repository>',
+    branch: 'master',
+  },
+});
+```
+
+### Relative path to file
+
+URLs are constructed using the repository details above and the relative path to the file supplied via the `path` prop. It should be relative to the root of your repository. For example, the path to _this_ file is `src/EditLink/EditLink.stories.mdx`.
+
+## Examples
+
+### Without icon
+
+<Preview>
+  <Story name="icon">
+    <EditLink path="src/EditLink/EditLink.stories.mdx" icon={false} />
+  </Story>
+</Preview>
+
+### Custom link text
+
+<Preview>
+  <Story name="text">
+    <EditLink path="src/EditLink/EditLink.stories.mdx" text="Edit source" />
+  </Story>
+</Preview>
+
+## Props
+
+<Props of={EditLink} />
+
+## Examples of similar components
+
+- [Carbon](https://www.carbondesignsystem.com/)
+- [Polaris](https://polaris.shopify.com/)
+- [Material-UI](https://material-ui.com/)
