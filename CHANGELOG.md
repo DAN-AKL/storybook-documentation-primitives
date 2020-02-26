@@ -1,3 +1,15 @@
+# v0.4.3 (Wed Feb 26 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump @storybook/addon-docs from 5.3.13 to 5.3.14 [#15](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/15) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v0.4.2 (Wed Feb 26 2020)
 
 #### 🐛  Bug Fix
