@@ -1,3 +1,16 @@
+# v0.3.9 (Mon Feb 24 2020)
+
+#### ⚠️  Pushed to master
+
+- build(editlink): update DocsContext import  ([@gmlnchv](https://github.com/gmlnchv))
+- build(rollup): add json config  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.3.8 (Mon Feb 24 2020)
 
 #### ⚠️  Pushed to master
