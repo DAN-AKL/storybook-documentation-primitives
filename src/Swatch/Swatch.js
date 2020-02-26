@@ -48,7 +48,7 @@ const ButtonReset = styled.button(withReset, ({ theme }) => ({
   fontSize: theme.typography.size.s2,
 }));
 
-export const SwatchContainer = ({ children }) => {
+export const Swatches = ({ children }) => {
   return (
     <Container>
       <ContainerItems>{children}</ContainerItems>
@@ -71,14 +71,14 @@ export const Swatch = ({ name, value }) => {
   );
 };
 
-SwatchContainer.propTypes = {
+Swatches.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element,
   ]).isRequired,
 };
 
-SwatchContainer.defaultProps = {};
+Swatches.defaultProps = {};
 
 Swatch.propTypes = {
   name: PropTypes.string.isRequired,
