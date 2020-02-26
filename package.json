@@ -1,6 +1,6 @@
 {
   "name": "@dan-nz/storybook-documentation-primitives",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A collection of Storybook primitives to use for documenting components and tokens in design systems",
   "keywords": [
     "design systems",
