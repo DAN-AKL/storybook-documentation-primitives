@@ -1,3 +1,16 @@
+# v0.4.6 (Thu Feb 27 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump @dan-nz/commitlint-config from 0.7.6 to 0.7.11 [#23](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/23) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.5 (Thu Feb 27 2020)
 
 #### 🐛  Bug Fix
