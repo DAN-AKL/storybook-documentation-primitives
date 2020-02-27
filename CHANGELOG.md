@@ -1,3 +1,16 @@
+# v0.4.5 (Thu Feb 27 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump @babel/preset-env from 7.8.4 to 7.8.6 [#27](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/27) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.4 (Thu Feb 27 2020)
 
 #### 🐛  Bug Fix
