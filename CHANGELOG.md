@@ -1,3 +1,16 @@
+# v0.4.7 (Thu Feb 27 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump react from 16.12.0 to 16.13.0 [#26](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/26) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.6 (Thu Feb 27 2020)
 
 #### 🐛  Bug Fix
