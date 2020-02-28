@@ -1,3 +1,17 @@
+# v0.4.8 (Fri Feb 28 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump react-is from 16.12.0 to 16.13.0 [#24](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/24) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+- build(deps-dev): bump react-dom from 16.12.0 to 16.13.0 [#25](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/25) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.7 (Thu Feb 27 2020)
 
 #### 🐛  Bug Fix
