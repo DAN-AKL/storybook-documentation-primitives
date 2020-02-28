@@ -1,3 +1,16 @@
+# v0.4.10 (Fri Feb 28 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump @babel/core from 7.8.4 to 7.8.6 [#22](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/22) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.8 (Fri Feb 28 2020)
 
 #### 🐛  Bug Fix
