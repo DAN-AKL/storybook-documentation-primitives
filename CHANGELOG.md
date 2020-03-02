@@ -1,3 +1,16 @@
+# v0.4.14 (Mon Mar 02 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps): bump @storybook/design-system from 3.0.0 to 5.0.0 [#31](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/31) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.13 (Mon Mar 02 2020)
 
 #### 🐛  Bug Fix
