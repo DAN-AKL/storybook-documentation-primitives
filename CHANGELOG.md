@@ -1,3 +1,16 @@
+# v0.4.13 (Mon Mar 02 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump rollup from 1.31.1 to 1.32.0 [#30](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/30) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.12 (Mon Mar 02 2020)
 
 #### 🐛  Bug Fix
