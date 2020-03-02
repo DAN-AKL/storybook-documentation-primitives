@@ -1,3 +1,17 @@
+# v0.4.11 (Mon Mar 02 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump @storybook/addons from 5.3.13 to 5.3.14 [#13](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/13) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps): bump @storybook/theming from 5.3.13 to 5.3.14 [#12](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/12) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.10 (Fri Feb 28 2020)
 
 #### 🐛  Bug Fix
