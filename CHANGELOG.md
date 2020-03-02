@@ -1,3 +1,16 @@
+# v0.4.12 (Mon Mar 02 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump @storybook/react from 5.3.13 to 5.3.14 [#14](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/14) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.11 (Mon Mar 02 2020)
 
 #### 🐛  Bug Fix
