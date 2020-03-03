@@ -1,3 +1,16 @@
+# v0.4.16 (Tue Mar 03 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump webpack from 4.41.6 to 4.42.0 [#33](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/33) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]) [@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.15 (Mon Mar 02 2020)
 
 #### 🐛  Bug Fix
