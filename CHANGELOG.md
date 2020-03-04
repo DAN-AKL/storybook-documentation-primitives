@@ -1,3 +1,19 @@
+# v0.5.0 (Wed Mar 04 2020)
+
+#### 🚀  Enhancement
+
+- feat(var): change text to "copied!" on copy [#21](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/21) ([@gmlnchv](https://github.com/gmlnchv))
+
+#### ⚠️  Pushed to master
+
+- Merge branch 'var'  ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 1
+
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.4.17 (Tue Mar 03 2020)
 
 #### 🐛  Bug Fix
