@@ -1,0 +1,74 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Swatches, Swatch } from '../../src/Swatch/Swatch';
+import { Usage, Correct, Incorrect } from '../../src/Usage/Usage';
+import EditLink from '../../src/EditLink/EditLink';
+
+<Meta title="Examples/Color" />
+
+# Color
+
+We use color in meaningful ways in all expressions of our brand. Our colors are optimized to meet WCAG 2.0 Level AA Accessibility Guidelines.
+
+## Primary palette
+
+Our primary palette has four colors: yellow, black, grey and white. Yellow is friendly, vibrant colour that draws interest. Black, grey and white reflect simplicity and convey confidence.
+
+<Swatches>
+  <Swatch name="Yellow" value="#FECC00" />
+  <Swatch name="Black" value="#000000" />
+  <Swatch name="Grey" value="#53565A" />
+  <Swatch name="White" value="#FFFFFF" />
+</Swatches>
+
+## Secondary palette
+
+The secondary colors - blue and coral - are fun, friendly extensions to the primary colour palette. Grey is used to add depth and variation for backgrounds, and illustrations. The secondary palette is used for backgrounds, illustrations, text and icons and helps us convey a human touch, vibrancy and energy.
+
+<Swatches>
+  <Swatch name="Blue" value="#2741CD" />
+  <Swatch name="Coral" value="#F16B53" />
+  <Swatch name="Light Grey" value="#F2F2F2" />
+</Swatches>
+
+## Extended palette
+
+The extended palette consists of shades of colors from the primary and secondary palettes.
+
+### Neutral colors
+
+<Swatches>
+  <Swatch name="N50" value="#fafafa" />
+  <Swatch name="N100" value="#f5f5f5" />
+  <Swatch name="N200" value="#eeeeee" />
+  <Swatch name="N300" value="#e0e0e0" />
+  <Swatch name="N400" value="#bdbdbd" />
+  <Swatch name="N500" value="#9e9e9e" />
+  <Swatch name="N600" value="#757575" />
+  <Swatch name="N700" value="#616161" />
+  <Swatch name="N800" value="#424242" />
+  <Swatch name="N900" value="#212121" />
+</Swatches>
+
+### Usage guidelines
+
+Use the following as a guide for how and when to use colors from the palettes.
+
+<Usage>
+  <Correct>Use the primary background color with white text.</Correct>
+  <Incorrect>
+    Combine color values in ways that do not meet minimum accessibility contrast
+    requirements.
+  </Incorrect>
+</Usage>
+<Usage>
+  <Correct>
+    Use <strong>Dark Grey</strong> on <strong>White</strong>.
+  </Correct>
+  <Incorrect>
+    Use <strong>Light Grey</strong> on <strong>White</strong>.
+  </Incorrect>
+</Usage>
+
+---
+
+<EditLink path="docs/02-examples/color.story.mdx" />

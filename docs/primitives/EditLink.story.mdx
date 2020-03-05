@@ -1,5 +1,5 @@
 import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
-import EditLink from '../src/EditLink/EditLink';
+import EditLink from '../../src/EditLink/EditLink';
 
 <Meta title="Primitives/Edit on GitHub" />
 
@@ -11,7 +11,7 @@ Opens specified files in the GitHub file editor.
 
 <Preview>
   <Story name="default">
-    <EditLink path="src/EditLink/EditLink.stories.mdx" />
+    <EditLink path="docs/primitives/EditLink.story.mdx" />
   </Story>
 </Preview>
 
@@ -42,7 +42,7 @@ URLs are constructed using the repository details above and the relative path to
 
 <Preview>
   <Story name="icon">
-    <EditLink path="src/EditLink/EditLink.stories.mdx" icon={false} />
+    <EditLink path="docs/primitives/EditLink.story.mdx" icon={false} />
   </Story>
 </Preview>
 
@@ -50,7 +50,7 @@ URLs are constructed using the repository details above and the relative path to
 
 <Preview>
   <Story name="text">
-    <EditLink path="src/EditLink/EditLink.stories.mdx" text="Edit source" />
+    <EditLink path="docs/primitives/EditLink.story.mdx" text="Edit source" />
   </Story>
 </Preview>
 

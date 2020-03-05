@@ -1,0 +1,236 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Info, Warning } from '../../src/Panel/Panel';
+import { Swatches, Swatch } from '../../src/Swatch/Swatch';
+import { Usage, Correct, Incorrect } from '../../src/Usage/Usage';
+import { Tile } from '../../src/SpacingScale/SpacingScale';
+import EditLink from '../../src/EditLink/EditLink';
+import Var from '../../src/Var/Var';
+
+<Meta title="Examples/Design tokens" />
+
+# Design tokens
+
+Design tokens are design decisions, represented as data.
+
+## Introduction
+
+Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes.
+
+We use design tokens in place of hard-coded values — such as hex values for color or pixel values for spacing. We do this in order to maintain a scalable and consistent visual system for UI development.
+
+<Warning prefix="Heads up">
+  A new specification of design tokens will be released soon.
+</Warning>
+
+## Installation
+
+Our design tokens are available as a standalone `npm` package.
+
+<Info>We export tokens in CSS, SCSS and JavaScript formats.</Info>
+
+## List of design tokens
+
+### Font size
+
+Use these tokens for font sizes.
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th width="120">Value</th>
+      <th width="120">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          <Var>$font-size-heading-title-1</Var>
+        </td>
+        <td>28px</td>
+        <td>
+          <span style={{ fontSize: 28 }}>Aa</span>
+        </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>$font-size-heading-title-2</Var>
+      </td>
+      <td>22px</td>
+      <td>
+        <span style={{ fontSize: 22 }}>Aa</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>$font-size-heading-title-3</Var>
+      </td>
+      <td>16px</td>
+      <td>
+        <span style={{ fontSize: 16 }}>Aa</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>$font-size-heading-title-4</Var>
+      </td>
+      <td>14px</td>
+      <td>
+        <span style={{ fontSize: 14 }}>Aa</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <Var>$font-size-heading-title-5</Var>
+      </td>
+      <td>12px</td>
+      <td>
+        <span style={{ fontSize: 12 }}>Aa</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### Border radius
+
+Use these tokens to apply rounded corners to elements.
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <Var>borderRadiusCircle</Var>
+      </td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td>
+        <Var>borderRadiusNormal</Var>
+      </td>
+      <td>3px</td>
+    </tr>
+    <tr>
+      <td>
+        <Var>borderRadiusLarge</Var>
+      </td>
+      <td>6px</td>
+    </tr>
+    <tr>
+      <td>
+        <Var>borderRadiusSmall</Var>
+      </td>
+      <td>2px</td>
+    </tr>
+  </tbody>
+</table>
+
+### Spacing
+
+Use this for control spacing inside elements.
+
+<Info>
+Components should not provide surrounding white space. Use <strong>layout components</strong> to controls spacing between elements.
+</Info>
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th width="120">Value</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <Var>var(--space-xxx-small)</Var>
+      </td>
+      <td>Used when the space is limited</td>
+      <td>2px</td>
+      <td><Tile value={2} color="#FF4785" /></td>
+    </tr>
+    <tr>
+      <td>
+        <Var>var(--space-xx-small)</Var>
+      </td>
+      <td>Used when the space is limited</td>
+      <td>4px</td>
+      <td><Tile value={4} color="#FF4785" /></td>
+    </tr>
+    <tr>
+      <td>
+        <Var>var(--space-x-small)</Var>
+      </td>
+      <td>Used when the space is limited</td>
+      <td>8px</td>
+      <td><Tile value={8} color="#FF4785" /></td>
+    </tr>
+    <tr>
+      <td>
+        <Var>var(--space-small)</Var>
+      </td>
+      <td>Used when the space is limited</td>
+      <td>12px</td>
+      <td><Tile value={12} color="#FF4785" /></td>
+    </tr>
+    <tr>
+      <td>
+        <Var>var(--space-medium)</Var>
+      </td>
+      <td>Default spacing token</td>
+      <td>16px</td>
+      <td><Tile value={16} color="#FF4785" /></td>
+    </tr>
+    <tr>
+      <td>
+        <Var>var(--space-large)</Var>
+      </td>
+      <td>Used in a full page layout</td>
+      <td>20px</td>
+      <td><Tile value={20} color="#FF4785" /></td>
+    </tr>
+    <tr>
+      <td>
+        <Var>var(--space-x-large)</Var>
+      </td>
+      <td>Used in a full page layout</td>
+      <td>28px</td>
+      <td><Tile value={28} color="#FF4785" /></td>
+    </tr>
+    <tr>
+      <td>
+        <Var>var(--space-xx-large)</Var>
+      </td>
+      <td>Used in a full page layout</td>
+      <td>36px</td>
+      <td><Tile value={36} color="#FF4785" /></td>
+    </tr>
+    <tr>
+      <td>
+        <Var>var(--space-xxx-large)</Var>
+      </td>
+      <td>Used in a full page layout</td>
+      <td>48px</td>
+      <td><Tile value={48} color="#FF4785" /></td>
+    </tr>
+    <tr>
+      <td>
+        <Var>var(--space-xxxx-large)</Var>
+      </td>
+      <td>Used in a full page layout</td>
+      <td>72px</td>
+      <td><Tile value={72} color="#FF4785" /></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+<EditLink path="docs/examples/tokens.story.mdx" />
