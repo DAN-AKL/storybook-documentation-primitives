@@ -9,7 +9,7 @@
 npm i @dan-nz/storybook-documentation-primitives prop-types react react-dom
 ```
 
-## Docs and examples
+## Usage
 
 👉️ [Storybook with docs and demos](http://documentation-primitives-storybook.s3-website-ap-southeast-2.amazonaws.com/)
 
