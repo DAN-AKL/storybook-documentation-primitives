@@ -1,3 +1,9 @@
+# v0.5.1 (Thu Mar 05 2020)
+
+
+
+---
+
 # v0.5.0 (Wed Mar 04 2020)
 
 #### 🚀  Enhancement
