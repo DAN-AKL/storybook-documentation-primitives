@@ -1,3 +1,15 @@
+# v0.5.6 (Thu Mar 12 2020)
+
+#### 🐛  Bug Fix
+
+- build(deps-dev): bump @dan-nz/eslint-config from 0.7.11 to 0.7.15 [#48](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/48) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v0.5.5 (Sun Mar 08 2020)
 
 #### 🐛  Bug Fix
