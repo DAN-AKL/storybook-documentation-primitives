@@ -1,3 +1,15 @@
+# v0.5.9 (Tue Mar 17 2020)
+
+#### 🐛 Bug Fix
+
+- build(deps-dev): bump @auto-it/conventional-commits [#43](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/43) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v0.5.8 (Tue Mar 17 2020)
 
 #### 🐛 Bug Fix
