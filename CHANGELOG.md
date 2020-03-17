@@ -1,3 +1,15 @@
+# v0.5.10 (Tue Mar 17 2020)
+
+#### 🐛 Bug Fix
+
+- build(deps-dev): bump rollup-plugin-babel from 4.3.3 to 4.4.0 [#46](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/46) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v0.5.9 (Tue Mar 17 2020)
 
 #### 🐛 Bug Fix
