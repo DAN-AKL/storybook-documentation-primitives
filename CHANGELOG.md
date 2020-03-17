@@ -1,3 +1,15 @@
+# v0.5.8 (Tue Mar 17 2020)
+
+#### 🐛 Bug Fix
+
+- build(deps-dev): bump auto from 9.15.11 to 9.19.5 [#45](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/45) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v0.5.7 (Fri Mar 13 2020)
 
 #### 🐛  Bug Fix
