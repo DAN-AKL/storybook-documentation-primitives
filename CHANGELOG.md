@@ -1,3 +1,15 @@
+# v0.5.12 (Wed Mar 25 2020)
+
+#### 🐛 Bug Fix
+
+- build(deps): bump @storybook/components from 5.3.14 to 5.3.17 [#58](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/58) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v0.5.11 (Tue Mar 17 2020)
 
 #### 🐛 Bug Fix
