@@ -1,3 +1,15 @@
+# v0.5.13 (Sun Mar 29 2020)
+
+#### 🐛 Bug Fix
+
+- build(deps-dev): bump @babel/preset-react from 7.8.3 to 7.9.4 [#62](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/62) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+
+#### Authors: 1
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+
+---
+
 # v0.5.12 (Wed Mar 25 2020)
 
 #### 🐛 Bug Fix
