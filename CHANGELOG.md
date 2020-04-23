@@ -1,3 +1,44 @@
+# v0.5.14 (Thu Apr 23 2020)
+
+#### 🐛 Bug Fix
+
+- build(deps-dev): bump react from 16.13.0 to 16.13.1 [#78](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/78) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump @babel/preset-env from 7.9.0 to 7.9.5 [#80](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/80) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump react-is from 16.13.0 to 16.13.1 [#81](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/81) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump babel-loader from 8.0.6 to 8.1.0 [#85](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/85) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump auto from 9.26.4 to 9.30.1 [#91](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/91) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump @auto-it/conventional-commits from 9.26.4 to 9.30.1 [#90](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/90) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump husky from 4.2.3 to 4.2.5 [#88](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/88) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps): bump @storybook/design-system from 5.0.0 to 5.0.4 [#60](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/60) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump @dan-nz/eslint-config from 0.7.15 to 0.7.22 [#63](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/63) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump @dan-nz/commitlint-config from 0.7.15 to 0.7.22 [#66](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/66) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump @storybook/react from 5.3.14 to 5.3.18 [#67](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/67) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump @babel/preset-env from 7.8.7 to 7.9.0 [#68](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/68) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump @storybook/addons from 5.3.14 to 5.3.18 [#69](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/69) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump @storybook/addon-docs from 5.3.14 to 5.3.18 [#70](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/70) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps): bump @storybook/theming from 5.3.14 to 5.3.18 [#71](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/71) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump auto from 9.19.5 to 9.26.4 [#75](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/75) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- build(deps-dev): bump @auto-it/conventional-commits from 9.19.5 to 9.26.4 [#74](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/74) ([@dependabot-preview[bot]](https://github.com/dependabot-preview[bot]))
+- Docs [#92](https://github.com/DAN-AKL/storybook-documentation-primitives/pull/92) ([@gmlnchv](https://github.com/gmlnchv))
+
+#### ⚠️  Pushed to `master`
+
+- Merge branch 'master' of github.com:DAN-AKL/documentation-primitives ([@gmlnchv](https://github.com/gmlnchv))
+- docs: update link to demos ([@gmlnchv](https://github.com/gmlnchv))
+- ci(github): remove deploying to s3, will use netlify instead ([@gmlnchv](https://github.com/gmlnchv))
+- docs: add basic installation and usage instructions ([@gmlnchv](https://github.com/gmlnchv))
+- style: fix linting errors ([@gmlnchv](https://github.com/gmlnchv))
+- build(deps-dev): bump prettier ([@gmlnchv](https://github.com/gmlnchv))
+- build(deps-dev): bump @dan-nz packages ([@gmlnchv](https://github.com/gmlnchv))
+- build(deps): update dependencies ([@gmlnchv](https://github.com/gmlnchv))
+
+#### Authors: 2
+
+- [@dependabot-preview[bot]](https://github.com/dependabot-preview[bot])
+- Georgy Malanichev ([@gmlnchv](https://github.com/gmlnchv))
+
+---
+
 # v0.5.13 (Sun Mar 29 2020)
 
 #### 🐛 Bug Fix
