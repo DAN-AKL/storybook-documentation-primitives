@@ -38,29 +38,3 @@ jobs:
           npm run build
           npm run storybook:build
           npx auto shipit
-
-      - uses: actions/upload-artifact@v1
-        with:
-          name: storybook
-          path: storybook-static
-
-  deploy:
-    needs: release
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/download-artifact@v1
-        with:
-          name: storybook
-          path: storybook-static
-
-      - name: Deploy Storybook to S3
-        if: success()
-        uses: jakejarvis/s3-sync-action@master
-        with:
-          args: --acl public-read --follow-symlinks --delete
-        env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'ap-southeast-2'
-          SOURCE_DIR: 'storybook-static'
