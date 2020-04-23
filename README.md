@@ -11,7 +11,7 @@ npm i @dan-nz/storybook-documentation-primitives prop-types react react-dom
 
 ## Usage
 
-👉️ [Storybook with docs and demos](http://documentation-primitives-storybook.s3-website-ap-southeast-2.amazonaws.com/)
+👉️ [Storybook with docs and demos](https://documentation-primitives.netlify.app/)
 
 ### Running demos locally
 
