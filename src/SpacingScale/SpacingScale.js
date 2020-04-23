@@ -17,10 +17,10 @@ const StyledTile = styled.div`
   width: ${({ value, unit }) => widthWithUnit(value, unit)};
   height: ${({ square, value, unit }) =>
     square ? widthWithUnit(value, unit) : '10px'};
-  background-color: ${props => props.color};
+  background-color: ${(props) => props.color};
 `;
 
-export const Tile = props => <StyledTile {...props} />;
+export const Tile = (props) => <StyledTile {...props} />;
 
 export const Row = ({ children, value, unit, tileProps }) => (
   <tr>
@@ -40,13 +40,13 @@ export const SpacingScale = ({ columns, children, unit, tileProps }) => {
     <Table>
       <thead>
         <tr>
-          {columns.map(c => (
+          {columns.map((c) => (
             <th key={c}>{c}</th>
           ))}
         </tr>
       </thead>
       <tbody>
-        {React.Children.map(children, child =>
+        {React.Children.map(children, (child) =>
           React.cloneElement(child, {
             unit,
             tileProps,

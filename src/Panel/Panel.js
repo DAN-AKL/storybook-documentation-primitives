@@ -30,8 +30,8 @@ const WarningPanel = styled(StyledPanel)`
   border-color: #fbc02d;
 `;
 
-export const Info = props => <InfoPanel {...props} />;
-export const Warning = props => <WarningPanel {...props} />;
+export const Info = (props) => <InfoPanel {...props} />;
+export const Warning = (props) => <WarningPanel {...props} />;
 
 const panelPropTypes = {
   children: PropTypes.oneOfType([
