@@ -1,0 +1,40 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction/Getting started" />
+
+# Getting started
+
+## Installation
+
+```
+npm i @dan-nz/storybook-documentation-primitives prop-types react react-dom
+```
+
+## Usage
+
+Use inside Storybook MDX stories:
+
+```md
+import { Meta } from '@storybook/addon-docs/blocks';
+import { Checkbox } from './Checkbox';
+
+<Meta title="Color" />
+
+# Our brand colors
+
+...
+
+<Swatches>
+  <Swatch name="Blue" value="#2741CD" />
+  <Swatch name="Coral" value="#F16B53" />
+  <Swatch name="Light Grey" value="#F2F2F2" />
+</Swatches>
+```
+
+Check "Examples" pages for more real-world examples of using Documentation Primitives.
+
+### More resources
+
+- [Storybook Docs addon](https://github.com/storybookjs/storybook/tree/master/addons/docs)
+- [MDX](https://mdxjs.com/)
+- [MDX support in Storybook](https://github.com/storybookjs/storybook/blob/master/addons/docs/README.md#mdx)
