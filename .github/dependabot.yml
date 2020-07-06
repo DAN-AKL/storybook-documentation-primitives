@@ -1,0 +1,10 @@
+# https://docs.github.com/en/github/administering-a-repository/enabling-and-disabling-version-updates
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    ignore:
+      # Ignore Babel updates until these are automatically grouped
+      - dependency-name: '@babel/*'
