@@ -8,33 +8,27 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
     steps:
-      - uses: actions/checkout@v1
-
-      - name: Prepare repository
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          git config --global user.name 'gitdeployuserDAN'
-          git config --global user.email 'gitdeployuserDAN@users.noreply.github.com'
-          git checkout ${GITHUB_REF:11} --
-          git remote rm origin
-          git remote add origin "https://x-access-token:$GH_TOKEN@github.com/DAN-AKL/storybook-documentation-primitives.git"
-          git fetch origin --tags
-          git branch --set-upstream-to origin/${GITHUB_REF:11} ${GITHUB_REF:11}
+      - uses: actions/checkout@v2
 
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
 
-      - name: Create Release
+      - name: Install
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          CI: true
+        run: npm ci
+
+      - name: Build
+        if: success()
+        run: npm run build
+
+      - name: Create Release
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          npm ci
-          npm run build
-          npm run storybook:build
-          npx auto shipit
+        run: npx semantic-release

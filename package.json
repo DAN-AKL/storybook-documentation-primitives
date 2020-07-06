@@ -26,15 +26,13 @@
     "storybook:build": "build-storybook --docs",
     "storybook:start": "start-storybook --docs -p 6006",
     "lint": "eslint src",
-    "commit": "git-cz",
-    "release": "auto shipit"
+    "commit": "git-cz"
   },
   "peerDependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@auto-it/conventional-commits": "^9.10.7",
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-export-default-from": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
@@ -45,10 +43,11 @@
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-json": "^4.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@storybook/addon-docs": "^5.3.13",
     "@storybook/addons": "^5.3.13",
     "@storybook/react": "^5.3.13",
-    "auto": "^9.10.7",
     "babel-loader": "^8.0.6",
     "commitizen": "^4.0.4",
     "cz-conventional-changelog": "^3.1.0",
@@ -62,6 +61,7 @@
     "rollup": "^1.31.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-peer-deps-external": "^2.2.2",
+    "semantic-release": "^17.1.1",
     "webpack": "^4.41.5"
   },
   "dependencies": {
@@ -79,11 +79,5 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  },
-  "auto": {
-    "plugins": [
-      "npm",
-      "conventional-commits"
-    ]
   }
 }
