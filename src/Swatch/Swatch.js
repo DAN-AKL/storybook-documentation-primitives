@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@storybook/theming';
 import { withReset } from '@storybook/components/dist/typography/shared';
-import CopyToClipboard from 'react-copy-to-clipboard';
+import Var from '../Var/Var';
 
 const Container = styled.div`
   & + & {
@@ -37,17 +37,6 @@ const Name = styled.p(withReset, ({ theme }) => ({
   color: theme.color.defaultText,
 }));
 
-const ButtonReset = styled.button(withReset, ({ theme }) => ({
-  WebkitAppearance: 'none',
-  userSelect: 'none',
-  margin: 0,
-  padding: 0,
-  border: 0,
-  outline: 0,
-  cursor: 'pointer',
-  fontSize: theme.typography.size.s2,
-}));
-
 export const Swatches = ({ children }) => {
   return (
     <Container>
@@ -61,12 +50,7 @@ export const Swatch = ({ name, value }) => {
     <Item>
       <Color value={value} />
       <Name>{name}</Name>
-
-      <CopyToClipboard text={value}>
-        <ButtonReset type="button" title="Copy value">
-          {value}
-        </ButtonReset>
-      </CopyToClipboard>
+      <Var>{value}</Var>
     </Item>
   );
 };
