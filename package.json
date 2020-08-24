@@ -38,7 +38,7 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "@commitlint/cli": "^9.0.1",
-    "@dan-nz/commitlint-config": "^0.7.22",
+    "@dan-nz/commitlint-config": "^1.0.0",
     "@dan-nz/eslint-config": "^0.7.22",
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-json": "^4.1.0",
