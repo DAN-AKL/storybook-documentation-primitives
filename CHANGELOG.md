@@ -1,3 +1,15 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [0.6.0](https://github.com/DAN-AKL/storybook-documentation-primitives/compare/v0.5.14...v0.6.0) (2020-08-24)
+
+
+### Features
+
+* **swatch:** use var component for color value ([1433e35](https://github.com/DAN-AKL/storybook-documentation-primitives/commit/1433e354ba1c2e0eb29a66dded5fb4e9dce5a363))
+
 # v0.5.14 (Thu Apr 23 2020)
 
 #### 🐛 Bug Fix
