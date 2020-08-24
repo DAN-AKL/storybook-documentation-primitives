@@ -29,8 +29,8 @@
     "commit": "git-cz"
   },
   "peerDependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.4",
@@ -56,9 +56,9 @@
     "husky": "^4.2.3",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-is": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "rollup": "^2.26.5",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
