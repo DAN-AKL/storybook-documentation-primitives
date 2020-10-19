@@ -59,7 +59,7 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-is": "16.13.1",
-    "rollup": "2.29.0",
+    "rollup": "2.32.0",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-peer-deps-external": "2.2.3",
     "semantic-release": "17.1.2",
