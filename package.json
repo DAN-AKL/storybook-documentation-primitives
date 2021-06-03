@@ -61,7 +61,7 @@
     "react-is": "16.13.1",
     "rollup": "2.33.0",
     "rollup-plugin-babel": "4.4.0",
-    "rollup-plugin-peer-deps-external": "2.2.3",
+    "rollup-plugin-peer-deps-external": "2.2.4",
     "semantic-release": "17.2.1",
     "webpack": "4.44.2"
   },
